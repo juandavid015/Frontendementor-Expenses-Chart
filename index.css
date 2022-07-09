@@ -125,14 +125,14 @@ hr {
     padding: 2rem;
 }
 
-.tax span, span {
+.tax span, p {
     margin-bottom: 0;
 }
 .total h1 {
     margin-top:  0;
     margin-bottom: 0;
 }
-.card-footer span {
+.card-footer p {
     text-align: end;
 }
 
