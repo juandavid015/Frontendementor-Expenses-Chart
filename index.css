@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Staatliches&family=Zen+Kurenaido&display=swap');
+
+/*GENERAL SETUP ///////////////////////////////////////////*/ 
+
+:root {
+    /* Primary Colors */
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    /* Neutral */
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+body {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    background-color: var(--Cream);
+    margin: 0;
+    padding: 0;
+}
+main {
+    font-size: 18px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    margin: auto;
+    width: fit-content;
+    max-width: 100%;   
+}
+.card-container {
+    display: flex;
+    background-color: var(--Very-pale-orange);
+    color: var(--Dark-brown);
+    padding: 2em 2em 0em 2em;
+    justify-content: space-between;
+    border-radius: 1em;
+    
+}
+.card-container span {
+    color: var(--Medium-brown);
+}
+
+/*CARD HEADER ////////////////////////////////////////////////////////////////////////////////////*/ 
+.card-header {
+    background-color: var(--soft-red);
+    color: var(--Very-pale-orange);
+    margin-bottom: 1.5em;
+    padding-bottom: 2em;
+}
+
+.card-header > div {
+    min-width: 0;
+    align-self: center;
+}
+.card-header h1 {
+    line-height: 0;
+}
+
+.card-header span {
+    color: var(--Very-pale-orange);
+}
+
+/*CARD BODY ////////////////////////////////////////////////////////////////////////////////////////*/ 
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    border-radius:  1em 1em 0rem 0rem;
+}
+.body-title h1 {
+    margin: 0;
+}
+.body-bars { 
+    display: flex;
+    padding-left: 0;
+    padding-right: 0em;
+    gap: 1em;
+}
+.bar {
+    width: 3rem;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-width: 0; /*wtf*/
+}
+.fill {
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    align-self: center;
+}
+.amount  {
+    background-color: var(--Dark-brown);
+    border-radius: 0.3em;
+    padding: 0.3em;
+    margin-bottom: 0.3em;
+    visibility: hidden;
+    align-self: center;
+}
+.amount span {
+    color: var(--Very-pale-orange);
+}
+.day {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin: 2em 0em 0em;
+    border-color: var(--Very-pale-orange);
+}
+
+/*CARD FOOTER ///////////////////////////////////////////////////////////////////////////////////*/ 
+
+.card-footer {
+    background-color: var(--Very-pale-orange);
+    border-radius: 0 0 1rem  1rem;
+    padding: 2rem;
+}
+
+.tax span, h4 {
+    margin-bottom: 0;
+}
+.total h1 {
+    margin-top:  0;
+    margin-bottom: 0;
+}
+.card-footer h4 {
+    text-align: end;
+}
+
+/*EXTRA AND MOBILE /////////////////////////////////////////////////////////////////////////////////*/ 
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 375px) {
+    body , main{
+        font-size: 12px;
+    }
+    .chars-header h2, span {
+        margin-top: 0;
+    }
+    .bar {
+        width: 2rem;
+    }
+}
