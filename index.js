@@ -12,7 +12,7 @@ barDays.forEach(el => el['height']= getHeight(heightRef, el.amount));
 
 
 
-function getBars(){
+(function getBars(){
 
     let bars = document.querySelectorAll('.bar');
 
@@ -44,10 +44,9 @@ function getBars(){
         });
          
       }
-    }
+    })();
      
     
 //getComputedStyle(document.querySelector('.bar'))['height']) Considerating using getComputedStyle for the future
 // maybe for dinamically get the max height reference
 //getComputedStyle(document.querySelector('.day'))['height'])
-getBars();
