@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://frontend-mentor-expenses-chart-component-omega.vercel.app/)
+- Solution URL: [Vercel](https://frontend-mentor-expenses-chart-component-omega.vercel.app/)
 
 
 ## My process
